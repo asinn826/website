@@ -3,17 +3,21 @@ a:focus {
     -moz-outline-style: none;
 }
 a:link {
-    color: #6EADFA;
+    color: #4DC9FF;
 }
 
 a:visited {
-    color: #0059E8;
+    color: #57009E;
 }
 
 .aboutme-container {
     display: inline-block;
     margin-left: 15%;
     margin-right: 15%;
+}
+
+#achievements {
+    padding-bottom: 75px;
 }
 
 .achievements-list-container {
@@ -41,7 +45,7 @@ aboutmetext {
 } 
 
 .banner-bottom {
-    background: url(../images/collage.png); 
+    background: url(../images/collage.jpg); 
     background-position: center;
     background-color:#000;
     margin-bottom: 50px;
@@ -57,26 +61,13 @@ aboutmetext {
 
 <!-- TEST BACKGROUND STUFF -->
 .body {  
-        background:#e7e7e7;
+        background:#FFFFFF;
     }
 #box {
     box-shadow:inset 1px 1px 25px 0 rgba(0,0,0,.45);
-    margin:0 auto 0 auto; 
-    background:url(../images/collage.png) 0 0 fixed;
+    background:url(../images/collage.jpg) fixed;
     background-size:auto;
-    overflow:hidden;
-}
-
-#overlay {  
-    background:rgba(0,0,0,.75);
-    text-align:center;
-    padding:66px 0 66px 0;
-    opacity:0;
-    -webkit-transition: opacity .25s ease;
-    -webkit-transition: opacity 250ms;
-    -moz-transition: opacity 250ms;
-    -o-transition: opacity 250ms;
-    transition: opacity 250ms;
+    background-position: center;
 }
 
 #box:hover #overlay {
@@ -86,7 +77,7 @@ aboutmetext {
 #bannertext {  
     font-family: "Open Sans", sans-serif;
     color:rgba(255,255,255,.85);
-    font-size:48px;
+    font-size:64px;
 }
 <!-- END TEST STUFF -->
 
@@ -132,9 +123,23 @@ banner-bottom:hover > .banner-text {
     text-align: left;
 }
 
+.contact {
+    background: url(../images/IMG_1001-blur.jpg) fixed; 
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 600;
+    background-position: center;
+    padding-top: 200px;
+}
+
 .contact-bar {
     display:inline-block;
     text-align: left;
+}
+
+#contactinfo {
+    color: #FFFFFF;
+    padding-bottom: 150px;
 }
 
 content-main {
@@ -154,6 +159,7 @@ content-main {
     color: #FFFFFF;
     display:inline-block;
     width: 100%;
+    padding-bottom: 75px;
 }
 
 .education {
@@ -164,6 +170,10 @@ content-main {
 
 .email-icon:hover {
     opacity: 0.5;
+}
+
+#experience {
+    padding-bottom: 75px;
 }
 
 .experience {
@@ -177,12 +187,14 @@ content-main {
 }
 
 .footer {
-    background-color: #747A80;
+    background-color: #5B5E63;
     color: #FFFFFF;
     font-family: "Open Sans", sans-serif;
+    font-size: 10pt;
     text-align: center;
     display: inline-block;
     width: 100%;
+    position: absolute;
 }
 
 .github-icon:hover {
@@ -199,34 +211,34 @@ content-main {
 }
 
 .intro {
-    background: url(../images/IMG_1001-blur.png) 50% 0 fixed; 
+    background: url(../images/IMG_1937-blur.jpg) fixed; 
     background-position: center;
     margin: 0 auto;
-    height: auto;  
+    height: 100%;  
     width: 100%;
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    padding: 100px 0;
-    
+    padding: 375px 0 250px 0;    
 }
 
 .intro-top {
     font-family: "Lato", sans-serif;
-    font-size: 48pt;
+    font-size: 56pt;
     color: #FFFFFF;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
 }
 
 .intro-bottom {
     font-family: "Lato", sans-serif;
-    font-size: 24pt;
-    font-weight: 700;
+    font-size: 30pt;
+    font-weight: 400;
     color: #FFFFFF;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .languages {
-    
+    font-size: 12pt;
 }
 
 .leftparagraph {
@@ -254,6 +266,8 @@ content-main {
 }
 
 .navbar {
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
     background-color:#0064b4;
     width:100%;
     height:auto;
@@ -295,6 +309,18 @@ content-main {
     width: 100%;
 }
 
+#overlay {  
+    background:rgba(0,0,0,.75);
+    text-align:center;
+    padding:66px 0 66px 0;
+    opacity:0;
+    -webkit-transition: opacity .25s ease;
+    -webkit-transition: opacity 250ms;
+    -moz-transition: opacity 250ms;
+    -o-transition: opacity 250ms;
+    transition: opacity 250ms;
+}
+
 .phone-icon:hover {
     opacity: 0.5;
 }
@@ -312,14 +338,21 @@ content-main {
 }
 
 .sectiontitle {
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 36pt;
+    padding-top: 1.5em;
 }
 
 .socialinfo {
     display: inline-block;
+    padding-bottom: 100px;
 }
 
 .social-media-bar {
     text-align: left;
     margin-left: -30px;
+}
+
+#skills {
+    padding-bottom: 350px;
 }

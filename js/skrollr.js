@@ -1680,3 +1680,5 @@
 	//Animation frame id returned by RequestAnimationFrame (or timeout when RAF is not supported).
 	var _animFrame;
 }(window, document));
+
+var s = skrollr.init();
