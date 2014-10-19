@@ -1,0 +1,325 @@
+a:focus {
+    outline: none;
+    -moz-outline-style: none;
+}
+a:link {
+    color: #6EADFA;
+}
+
+a:visited {
+    color: #0059E8;
+}
+
+.aboutme-container {
+    display: inline-block;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.achievements-list-container {
+    display:inline-block;
+}
+
+.achievements-list {
+    text-align: left;
+    list-style-image: url(../images/chevron-right-cropped.png);
+    vertical-align: middle;
+}
+
+.achievements-title {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+aboutmetext {
+    margin-top: 200px;
+}
+
+.achievementsection {
+    background-color: #5B5E63;
+    color: #FFFFFF;
+} 
+
+.banner-bottom {
+    background: url(../images/collage.png); 
+    background-position: center;
+    background-color:#000;
+    margin-bottom: 50px;
+    height: auto;  
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    padding: 100px 0;
+    -webkit-transition: opacity 250ms;
+    -moz-transition: opacity 250ms;
+    -o-transition: opacity 250ms;
+    transition: opacity 250ms;
+}
+
+<!-- TEST BACKGROUND STUFF -->
+.body {  
+        background:#e7e7e7;
+    }
+#box {
+    box-shadow:inset 1px 1px 25px 0 rgba(0,0,0,.45);
+    margin:0 auto 0 auto; 
+    background:url(../images/collage.png) 0 0 fixed;
+    background-size:auto;
+    overflow:hidden;
+}
+
+#overlay {  
+    background:rgba(0,0,0,.75);
+    text-align:center;
+    padding:66px 0 66px 0;
+    opacity:0;
+    -webkit-transition: opacity .25s ease;
+    -webkit-transition: opacity 250ms;
+    -moz-transition: opacity 250ms;
+    -o-transition: opacity 250ms;
+    transition: opacity 250ms;
+}
+
+#box:hover #overlay {
+    opacity:1;
+}
+
+#bannertext {  
+    font-family: "Open Sans", sans-serif;
+    color:rgba(255,255,255,.85);
+    font-size:48px;
+}
+<!-- END TEST STUFF -->
+
+.banner-bottom:hover {
+    background-color:#000;
+    opacity:0.5; 
+}
+
+banner-bottom:hover > .banner-text {
+    background-color:#000;
+    opacity:0.8;    
+}
+
+#banner-separator .banner-text {
+    color: #075DB3;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 32pt;
+    visibility: hidden;
+}
+
+#banner-separator:hover .banner-text {
+    visibility: visible;    
+}
+
+.bar {
+    background: #075DB3;
+    height: 30px;
+    color: #075DB3;
+}
+
+.center {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.column-right-align {
+    width: 50%;
+    text-align: right;
+}
+
+.column-left-align {
+    text-align: left;
+}
+
+.contact-bar {
+    display:inline-block;
+    text-align: left;
+}
+
+content-main {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.courses-list {
+    text-align: left;
+    list-style-image: url(../images/chevron-right-cropped-white.png);
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#education {
+    background-color: #5B5E63;
+    color: #FFFFFF;
+    display:inline-block;
+    width: 100%;
+}
+
+.education {
+    background-color: #5B5E63;
+    color: #FFFFFF;
+    display:inline-block;
+}
+
+.email-icon:hover {
+    opacity: 0.5;
+}
+
+.experience {
+    background-color: #5B5E63;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+.fb-icon:hover {
+    opacity: 0.5;
+}
+
+.footer {
+    background-color: #747A80;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.github-icon:hover {
+    opacity: 0.5;
+}
+
+.img-inline {
+    float:left;
+    margin: 15px;
+}
+
+.intro-socialmedia, .languageproficiencytitle, {
+    text-align: center;
+}
+
+.intro {
+    background: url(../images/IMG_1001-blur.png) 50% 0 fixed; 
+    background-position: center;
+    margin: 0 auto;
+    height: auto;  
+    width: 100%;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+    
+}
+
+.intro-top {
+    font-family: "Lato", sans-serif;
+    font-size: 48pt;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center;
+}
+
+.intro-bottom {
+    font-family: "Lato", sans-serif;
+    font-size: 24pt;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.languages {
+    
+}
+
+.leftparagraph {
+    text-align: left;
+}
+
+.li-icon:hover {
+    opacity: 0.5;
+}
+
+.line-light {
+    width: 30%;
+    border-color: #FFFFFF;
+}
+
+.line-dark {
+    width: 30%;
+    border-color: #000000;
+}
+
+.my-row {
+    display: inline-block;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.navbar {
+    background-color:#0064b4;
+    width:100%;
+    height:auto;
+    box-shadow: 0px 1px 10px #5E5E5E;
+    top:0px;
+    border-bottom:solid #000000;
+}
+
+.navbar li {
+    display:inline-block;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.navbar > ul {
+    margin: 0;
+}
+
+.navbar li a{
+    display: block;
+    padding:15px;/*t r b l*/
+    line-height:20px;
+    text-decoration:none;
+    color:#F9F9F9;
+}
+
+.navbar li:hover {
+    opacity:1;
+    background:#044b84;
+    -webkit-transition:ease-in-out all 200ms;
+    -moz-transition:ease-in-out all 200ms;
+    -o-transition:ease-in-out all 200ms;
+    -ms-transition:ease-in-out all 200ms;
+    transition:ease-in-out all 200ms;
+}
+
+.navtext {
+    background-color: #747A80;
+    width: 100%;
+}
+
+.phone-icon:hover {
+    opacity: 0.5;
+}
+
+.positiontitle {
+    font-style: italic;
+}
+
+.position-desc {
+    max-width: 700px;
+}
+
+.pre-space {
+    text-indent: 15px;
+}
+
+.sectiontitle {
+    font-weight: 600;
+}
+
+.socialinfo {
+    display: inline-block;
+}
+
+.social-media-bar {
+    text-align: left;
+    margin-left: -30px;
+}
