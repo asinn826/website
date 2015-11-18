@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-<html lang="en-ca">
+<html lang="en">
 <head>
-    <!-- Basic page metas -->
+	<!-- Basic page metas -->
     <meta charset="UTF-8" />
     <meta name="description" content="Alfred Sin is a student studying business and computer science at the University of British Columbia." />
     <meta name="author" content="Alfred Sin" />
     <meta name="keywords" content="Alfred, Sin, Alfred Sin, Student, UBC, Vancouver, Business, Computer Science, BUCS, Business Technology, Developer, Student, Business and computer science, Canada, website, webpage, web site" />
-    <meta name="copyright" content="2014 Alfred Sin" />
+    <meta name="copyright" content="2015 Alfred Sin" />
 
-    <!-- Mobile-specific metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Mobile-specific meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Custom CSS -->
-    <link href="./css/custom.css" rel="stylesheet" />
+	<title>Alfred Sin: Business Student, Computer Enthusiast.</title>
 
-    <!-- Bootstrap -->
-    <link href="./css/bootstrap.css" rel="stylesheet" />
+	<!-- CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+	<link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/normalize.css" rel="stylesheet" />
 
-    <!-- Favicons and Apple touch icons -->
-    <link rel="icon" href="favicons/favicon-new.ico">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicons/appletouch-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicons/appletouch-114x114.png">
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+    <link href="assets/css/custom.css" rel="stylesheet" />
 
-    <!-- Google Fonts (cuz we LOVE options!) -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Lato:400,900|Asap:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Oxygen|Droid+Sans|Noto+Sans' rel='stylesheet' type='text/css'>
+    <!-- Load jQuery before other js files -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
 
-    <!-- Google analytics script -->
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/favicons/favicon.ico">
+    <!-- <link rel="apple-touch-icon" sizes="72x72" href="favicons/appletouch-72x72.png"> this also shows up on my android phone. not good - only wanted it for apple devices -->
+
+    <!-- Google analytics script to stalk you -->
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-52051118-1', 'alfredsin.com');
     ga('require', 'displayfeatures');
@@ -39,450 +48,922 @@
 
     </script>
 
-    <!-- Title of page -->
-    <title>Alfred Sin: Business Student, Computer Enthusiast</title>
+
 </head>
 <body>
-    <div id="skrollr-body">
 
-    <!-- Intro/banner at top -->
-    <section id="skrollr-body">
-        <div id="intro" class="intro"
-            data-0="opacity:1;background-position: 0px -150px;"
-            data-500="opacity:1;background-position: 0px 0px;"
-            data-1000="opacity:1;background-position: 0px 150px;">
-            <h1 class="intro-top">Alfred Sin
-                <span class="blink">_</span>
-            </h1>
-                <div class="intro-bottom">
-                    <p>Business Student, Computer Enthusiast.</p>
-                </div>
+	<!-- Preloader -->
+
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+
+	<!-- Home start -->
+
+	<section id="home" class="pfblock-image screen-height">
+        <div class="home-overlay"></div>
+		<div class="intro">
+            <div class="start">
+                <h1>Hi, I'm Alfred<span class="blink">_</span></h1>
+            </div>
 
             <!-- Social media links -->
-            <div class="intro-socialmedia center">
+            <div class="center">
                 <span>
-                    <a class="fb-icon" href=https://www.facebook.com/alfred.sin target="_blank">
-                        <img style="height:auto; width:auto; max-width:48px; max-height:48;" src="images/icn-fb-white.png" alt="Facebook" />
+                    <a class="title-icon" href="http://www.linkedin.com/in/alfredsin" target="_blank">
+                        <img style="height:auto; width:auto; max-width:48px; max-height:48;" src="assets/images/icn-linkedin-white.png" alt="LinkedIn" />
                     </a>
 
-                    <a class="li-icon" href="http://www.linkedin.com/in/alfredsin" target="_blank">
-                        <img style="height:auto; width:auto; max-width:48px; max-height:48;" src="images/icn-linkedin-white.png" alt="LinkedIn" />
+                    <a class="title-icon" href="http://www.github.com/asinn826" target="_blank">
+                        <img style="height:auto; width:auto; max-width:48px; max-height:48;" src="assets/images/icn-github-white.png" alt="Github" />
                     </a>
-                    <script language="JavaScript">
-                        var username = "alfredsin";
-                        var hostname = "outlook.com";
-                        var linktext = username + "@" + hostname ;
-                        document.write("<a class='email-icon' href=" + "mail" + "to:" + username + "@" + hostname + ">" +
-                                       '<img style="height:auto; width:auto; max-width:48px; max-height:48;" src="images/icn-email-white.png" alt="Email" />' + "</a>");
-                    </script>
+
+                    <a class="title-icon" href=https://www.facebook.com/alfred.sin target="_blank">
+                        <img style="height:auto; width:auto; max-width:48px; max-height:48;" src="assets/images/icn-fb-white.png" alt="Facebook" />
+                    </a>
                 </span>
             </div> <!-- end social media links -->
-        </div> <!-- end intro -->
+		</div>
+
+        <!-- Scroll down button thing -->
+        <a href="#about">
+		<div class="scroll-down title-icon">
+            <span>
+                <i class="fa fa-angle-down fa-2x"></i>
+            </span>
+		</div>
+        </a>
+
+	</section>
+
+	<!-- Home end -->
+
+	<!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#home">Alfred Sin</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+						<li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+
+    <!-- About start -->
+
+	<section id="about" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">This is me</h2>
+                        <div class="albert"></div>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							<p>
+                            I'm a 21-year old student currently studying business and computer science at the University of British Columbia. My undergraduate degree exposes me to both the business and computer science worlds, allowing me to pair my business acumen with my passion for technology.
+                            </p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+
+
+                <a data-popup-ordinal="1" class="initialism business_open" href="#business">
+    				<div class="col-md-4">
+
+    					<div class="iconbox iconbox-active wow slideInLeft">
+    						<div class="iconbox-icon">
+    							<i class="fa fa-briefcase"></i>
+    						</div>
+    						<div class="iconbox-text">
+    							<h3 class="iconbox-title">Business</h3>
+    							<div class="iconbox-desc project-text clear-upper-case">
+                                    Yes, I go to business school.
+    							</div>
+    						</div>
+    					</div>
+
+    				</div>
+                </a>
+
+
+                <a data-popup-ordinal="1" class="initialism compsci_open" href="#compsci">
+    				<div class="col-md-4">
+
+    					<div class="iconbox iconbox-active wow slideInUp">
+    						<div class="iconbox-icon">
+                                <i class="fa fa-desktop"></i>
+    						</div>
+    						<div class="iconbox-text">
+    							<h3 class="iconbox-title">Computer Science</h3>
+    							<div class="iconbox-desc project-text clear-upper-case">
+    								I also take computer science classes.
+    							</div>
+    						</div>
+    					</div>
+
+    				</div>
+                </a>
+
+
+                <a data-popup-ordinal="1" class="initialism lifestuff_open" href="#lifestuff">
+    				<div class="col-md-4">
+
+    					<div class="iconbox iconbox-active wow slideInRight">
+    						<div class="iconbox-icon">
+    							<i class="fa fa-sun-o"></i>
+    						</div>
+    						<div class="iconbox-text">
+    							<h3 class="iconbox-title">Life</h3>
+    							<div class="iconbox-desc project-text clear-upper-case">
+    								I like to do things in my spare time.
+    							</div>
+    						</div>
+    					</div>
+
+    				</div>
+                </a>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- about end -->
+
+    <!-- ***********************
+     START CONTENT FOR POPUP BOXES
+         *********************** -->
+
+    <div id="business" class="well container">
+        <h2 class="text-center">Business</h2>
+        <p class="project-text">At the Sauder School of Business at UBC, I have been exposed to numerous core business courses including Finance, Accounting, Management Information Systems, and Information Systems Analysis and Design. These courses have helped me build a strong understanding of various aspects of the business world, ultimately helping me develop a strong, universally applicable, business toolkit. </p>
+
+        <div class="text-center">
+            <button class="business_close btn btn-default">Close</button>
+        </div>
+    </div>
+
+    <div id="compsci" class="well container">
+        <h2 class="text-center">Computer Science</h2>
+        <p class="project-text">Business skills are not all that I know. I also have experience with programming in various languages such as Java, C/C++, JavaScript, and even Haskell (yes, Haskell!). I have applied my knowledge in various personal, academic, and work-related projects listed below, working on both frontend and backend implementation. </p>
+
+        <div class="text-center">
+            <button class="compsci_close btn btn-default">Close</button>
+        </div>
+    </div>
+
+    <div id="lifestuff" class="well container">
+        <h2 class="text-center">Life</h2>
+        <p class="project-text">I love being outdoors. When I'm not busy throwing together lines of code on the screen or tinkering with my computer, I can be found hiking, camping, skiing, or just strolling along the streets enjoying the fresh air. I also enjoy an occasional game of badminton.</p>
+
+        <div class="text-center">
+            <button class="lifestuff_close btn btn-default">Close</button>
+        </div>
+    </div>
+
+    <div id="lunchbuddies" class="well container">
+        <h2 class="text-center">Lunch Buddies</h2>
+        <div class="fotorama" data-nav="thumbs" data-thumbwidth="113" data-thumbheight="64">
+            <img src="assets/images/screenshots/lunch-buddies-1.png">
+            <img src="assets/images/screenshots/lunch-buddies-4.png">
+            <img src="assets/images/screenshots/lunch-buddies-2.png">
+            <img src="assets/images/screenshots/lunch-buddies-3.png">
+        </div>
+        <p class="project-text">Lunch Buddies is an application that aims to bring people together.
+        Created for the 2015 SAP Intern Hackathon, Lunch Buddies will randomly match users with other users, and give these groups of people random restaurant suggestions to go to for lunch.
+        Restaurant locations are queried from Yelp and filtered to be within a certain radius of SAP.
+        Lunch Buddies was ultimately chosen as the winning submission at the hackathon. Total time spent: 20 hours.</p>
+
+
+        <div class="text-center">
+            <a href="http://alfredsin.com/sap-hackathon/" target="_blank">
+                <button class="slide_open btn btn-default">View Demo</button>
+            </a>
+            <button class="lunchbuddies_close btn btn-default">Close</button>
+        </div>
+    </div>
+
+    <div id="eloryze" class="well container">
+        <h2 class="text-center">ELORyze</h2>
+        <div class="fotorama" data-nav="thumbs" data-thumbwidth="113" data-thumbheight="64">
+            <img src="assets/images/screenshots/eloryze-1.png">
+            <img src="assets/images/screenshots/eloryze-2.png">
+        </div>
+        <p class="project-text">ELORyze is a simple web application that allows users to view statistics about their accounts for the online game League of Legends. Upon entering their "Summoner Name", the application will retrieve, parse, and display relevant data from the Riot Games API. The link to the left may not display totally up-to-date information, as ELORyze has not been updated for a long time. </p>
+
+        <div class="text-center">
+            <a href="http://alfredsin.com/ELORyze/Website/" target="_blank">
+                <button class="slide_open btn btn-default">View Demo</button>
+            </a>
+            <button class="eloryze_close btn btn-default">Close</button>
+        </div>
+    </div>
+
+    <div id="parkcity" class="well container">
+        <h2 class="text-center">Park City</h2>
+        <div class="fotorama" data-nav="thumbs" data-thumbwidth="113" data-thumbheight="64">
+            <img src="assets/images/screenshots/parkcity-1.png">
+            <img src="assets/images/screenshots/parkcity-2.png">
+            <img src="assets/images/screenshots/parkcity-3.png">
+            <img src="assets/images/screenshots/parkcity-4.png">
+        </div>
+        <p class="project-text">Park City is a web application that retrieves park data from the Vancouver Parks Database and allows users to create, view, update, and delete events at any Vancouver park. Users may also log in and share events using Facebook, as well as view a list of all parks and all the events they have joined. There is also an option to register using an email address if the user doesn't have a Facebook account. </p>
+
+        <div class="text-center">
+            <a href="http://parkcity.herokuapp.com/" target="_blank">
+                <button class="slide_open btn btn-default">View Demo</button>
+            </a>
+            <button class="parkcity_close btn btn-default">Close</button>
+        </div>
+    </div>
+
+    <div id="prescriptapp" class="well container">
+        <h2 class="text-center">PrescriptApp</h2>
+        <div class="fotorama" data-nav="thumbs" data-thumbwidth="113" data-thumbheight="64">
+            <img src="assets/images/screenshots/prescript-app-1.png">
+            <img src="assets/images/screenshots/prescript-app-2.png">
+            <img src="assets/images/screenshots/prescript-app-3.png">
+            <img src="assets/images/screenshots/prescript-app-4.png">
+            <img src="assets/images/screenshots/prescript-app-5.png">
+        </div>
+        <p class="project-text">PrescriptApp is a web application that allows for quick and easy communication between doctors, patients, and pharmacists. Centered around a database schema containing ten separate tables, PrescriptApp allows a variety of projection, selection, and aggregation queries to be run by its three different types of users. </p>
+
+        <div class="text-center">
+            <button class="slide_open prescriptapp_close btn btn-default">No Demo Available, Sorry! :(</button>
+            <button class="prescriptapp_close btn btn-default">Close</button>
+        </div>
+    </div>
+
+    <div id="nextbus" class="well container">
+        <h2 class="text-center">Next Bus</h2>
+        <div class="fotorama" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="113">
+            <img src="assets/images/screenshots/nextbus-1.jpg" data-caption="List of favourite bus stops.">
+            <img src="assets/images/screenshots/nextbus-2.jpg" data-caption="Buses are plotted on a map, as well as the stop location and the user location.">
+            <img src="assets/images/screenshots/nextbus-3.jpg" data-caption="Bus information for a selected bus stop.">
+            <img src="assets/images/screenshots/nextbus-4.jpg" data-caption="Extra information is displayed when a bus is tapped.">
+        </div>
+        <p class="project-text">Next Bus is an Android application that utilizes Translink's Open API to provide real-time bus information to the user. Upon entering the number of the bus stop the user is currently at, Next Bus will find the estimated arrival times of the next five buses at the stop, and allow the user to view those buses on a map. I personally still use it myself, and prefer it over other transit applications out there.</p>
+
+        <div class="text-center">
+            <button class="slide_open nextbus_close btn btn-default">No Demo Available, Sorry! :(</button>
+            <button class="nextbus_close btn btn-default">Close</button>
+        </div>
+    </div>
+
+    <div id="casecomp" class="well container">
+        <h2 class="text-center">Case Competitions</h2>
+        <p class="project-text">Case Competitions, in which groups of people work together for a set period of time to solve a given case, are a lot of fun. Throughout my undergraduate career, I have been fortunate enough to work with many different types of people in various teams to tackle case competitions focused on a variety of subjects, from Accounting to  Sustainability. I truly enjoy the opportunity to work with different people in a high-pressure team environment where everyone is focused solely on one objective - winning.</p>
+        <ul class="project-text-list">
+            <li>Finalist, 2014 National Strategy Consulting Competition</li>
+            <li>First Place, 2014 UBC Case Competition Club Premiere 32 Case Competition</li>
+            <li>First Place, 2014 UBC Accounting Club CPA Case Competition</li>
+            <li>First Place, 2013 UBC Accounting Club Case SuperSkills Case Competition</li>
+            <li>First Place, 2013 Ernst &amp; Young Sustainability Case Competition</li>
+            <li>Second Place, 2012 International Business Club Case Competition</li>
+        </ul>
+
+        <div class="text-center">
+            <button class="casecomp_close btn btn-default">Close</button>
+        </div>
+    </div>
+
+    <div id="sap_dev" class="well container">
+        <h2 class="text-center">Working as a Developer at SAP</h2>
+        <p class="project-text">I am on a Scrum team responsible for various features of SAP Lumira, SAP's premier data anlaytics tool.</p>
+
+        <div class="text-center">
+            <button class="sap_dev_close btn btn-default">Close</button>
+        </div>
+    </div>
+
+    <div id="cpscta" class="well container">
+        <h2 class="text-center">TAing with the UBC Department of Computer Science</h2>
+        <p class="project-text">CPSC 210 is UBC's introductory software design course which teaches students principles of object-oriented software design in Java, culminating in the completion of an Android app. As a Teaching Assistant, I was responsible for remaining up-to-date with class content and leading practical lab sections to help students. </p>
+
+        <div class="text-center">
+            <button class="cpscta_close btn btn-default">Close</button>
+        </div>
+    </div>
+
+    <div id="clca" class="well container">
+        <h2 class="text-center">Being a Desk Assistant at the Sauder Library</h2>
+        <p class="project-text">I acted as the face of the Canaccord Learning Commons to students and help create a welcoming environment by providing computing and equipment assistance, answering information questions, and by helping students access the services they need. </p>
+
+        <div class="text-center">
+            <button class="clca_close btn btn-default">Close</button>
+        </div>
+    </div>
+
+    <div id="econtutor" class="well container">
+        <h2 class="text-center">Tutoring Economics with the UBC Alma Mater Society</h2>
+        <p class="project-text">I tutored first-year economics to students from various faculties. I tailored and adjusted my tutoring style to suit various students' learning styles, collecting a number of repeat students throughout the year. </p>
+
+        <div class="text-center">
+            <button class="econtutor_close btn btn-default">Close</button>
+        </div>
+    </div>
+
+    <div id="cuscsm" class="well container">
+        <h2 class="text-center">Managing Corporate Sponsorships</h2>
+        <p class="project-text">I expanded the network of the CUS by 15% by leveraging relationship management and organizational skills to reach out to potential sponsors. I was also instrumental in promoting the CUS to over 60 business professionals around Vancouver as I organized the annual Commerce Community Breakfast.</p>
+
+        <div class="text-center">
+            <button class="cuscsm_close btn btn-default">Close</button>
+        </div>
+    </div>
+
+    <div id="arcvpr" class="well container">
+        <h2 class="text-center">Recognizing top clubs and conferences</h2>
+        <p class="project-text">I maintained regular communication with CUS club and conference leaders to ensure a high level of cooperation between the Awards &amp; Recognition Committee and club executives. In doing so, I was able to fairly evaluate all CUS clubs and conference for the Top Club and Top Conference awards.</p>
+
+        <div class="text-center">
+            <button class="arcvpr_close btn btn-default">Close</button>
+        </div>
+    </div>
+
+    <div id="cmpvpa" class="well container">
+        <h2 class="text-center">The CMP's VP Academic role</h2>
+        <p class="project-text">In my role as the Commerce Mentorship Program's VP Academic, I was responsible for hiring tutors to host review sessions for select second-year Commerce courses, including introductory Accounting and Finance courses. I organized and helped promote these review sessions, which were held to great success - each was attended by over 100 students. </p>
+
+        <div class="text-center">
+            <button class="cmpvpa_close btn btn-default">Close</button>
+        </div>
+    </div>
+
+    <!-- ***********************
+         END CONTENT FOR POPUP BOXES
+         *********************** -->
+
+    <!-- Picture Banner -->
+    <div id="box2">
+        <div id="overlay" class="wow" data-wow-delay=".1s">
+        </div>
+    </div>
+
+
+    <!-- Skills start -->
+
+    <section class="pfblock" id="skills">
+
+        <div class="container">
+
+            <!-- Row -->
+            <div class="row skills">
+
+                <div class="row">
+
+                    <div class="col-sm-6 col-sm-offset-3">
+
+                        <div class="pfblock-header wow fadeInUp">
+                            <h2 class="pfblock-title">My Skills</h2>
+                            <div class="pfblock-line"></div>
+                            <div class="pfblock-subtitle">
+                                I dabble in a variety of different frameworks and am always looking to learn new languages and programming approaches.
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div><!-- .row -->
+
+                <!-- old progress bars -->
+                <div class="bars">
+                    <div class="col-xs-6 column-right-align">Java</div>
+                    <div class="col-xs-6">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100%" style="width: 55%;">
+                            <span class="sr-only">55% Complete</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 column-right-align">C/C++</div>
+                    <div class="col-xs-6">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100%" style="width: 30%;">
+                            <span class="sr-only">30% Complete</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 column-right-align">Racket</div>
+                    <div class="col-xs-6">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100%" style="width: 35%;">
+                            <span class="sr-only">35% Complete</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 column-right-align">HTML/CSS</div>
+                    <div class="col-xs-6">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100%" style="width: 45%;">
+                            <span class="sr-only">45% Complete</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 column-right-align">JavaScript</div>
+                    <div class="col-xs-6">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100%" style="width: 50%;">
+                            <span class="sr-only">50% Complete</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 column-right-align">Haskell</div>
+                    <div class="col-xs-6">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100%" style="width: 10%;">
+                            <span class="sr-only">10% Complete</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 column-right-align">Prolog</div>
+                    <div class="col-xs-6">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100%" style="width: 10%;">
+                            <span class="sr-only">10% Complete</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 column-right-align">SQL</div>
+                    <div class="col-xs-6">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100%" style="width: 20%;">
+                            <span class="sr-only">20% Complete</span>
+                          </div>
+                        </div>
+                    </div>
+                </div><!-- .bars -->
+
+            </div>
+        </div>
+
     </section>
 
-    <!-- Navbar -->
+    <!-- Skills end -->
 
-    <div id="navbar" class="navbar affix" role="navigation">
-        <ul>
-            <li><a href=#intro class="smoothScroll" itemprop="url"><span itemprop="titlenav">Home</span></a></li>
-            <li><a href=#aboutme class="smoothScroll" itemprop="url"><span itemprop="titlenav">About</span></a></li>
-            <li><a href=#experience class="smoothScroll" itemprop="url"><span itemprop="titlenav">Experience</span></a></li>
-            <li><a href=#achievements class="smoothScroll" itemprop="url"><span itemprop="titlenav">Achievements</span></a></li>
-            <li><a href=#education class="smoothScroll" itemprop="url"><span itemprop="titlenav">Education</span></a></li>
-            <li><a href=#contactinfo class="smoothScroll" itemprop="url"><span itemprop="titlenav">Contact</span></a></li>
-        </ul>
-    </div>
+	<!-- Projects start -->
 
+	<section id="projects" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
 
-    <!-- About me -->
-    <div class="content-main">
-    <div id="aboutme" class="center aboutme">
-        <h2 class="sectiontitle">ABOUT ME</h2>
-        <hr class="line-dark">
-        <img src=images/self-pic.png>
-        <div class="aboutme-container" style="text-align: left">
-            <div class="col-md-6"><p>
-            <br>I'm a 20-year old student currently pursuing a Combined Major in Business and Computer Science at the University of British Columbia in beautiful Vancouver, Canada. Due to the unique nature of my undergraduate degree, I get exposure to both the business and computer science worlds, allowing me to pair my business acumen accrued from my time in business school with my technical knowledge gained from my computer science courses. </p>
+				<div class="col-sm-6 col-sm-offset-3">
 
-            <p>At the Sauder School of Business at UBC, I have been exposed to numerous core business courses including Finance, Accounting, Management Information Systems, and Information Systems Analysis and Design. These courses have helped me build a strong understanding of various aspects of the business world, ultimately helping me develop a strong, universally applicable, business toolkit.
-            </p> </div>
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">My projects</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+                            Whether for fun or for class, I have benefitted a lot from learning by doing.
+						</div>
+					</div>
 
-            <div class="col-md-6">
-            <p><br>Business skills are not all that I know, however. I have also been exposed to programming languages such as Java, C/C++, and even Haskell, and have had the chance to apply my knowledge of Java in the completion of an Android app for one of my software construction courses. I also have experience working with HTML and CSS to create beautiful and functional web pages.</p>
+				</div>
+
+			</div><!-- .row -->
 
 
-            <p>Outside of school, I have had numerous opportunities to apply the skills I gained in the classroom in various extracurricular activities. I have been involved in various activities ranging from roles within the Commerce Undergraduate Society to team-based Case Competitions, which have provided me with many opportunities to successfully leverage my unique toolkit to stand out among my peers and gain recognition within the professional community.</p>
+            <div class="row">
 
-            <p> When I'm not throwing together lines of code on the screen or fiddling with spreadsheets, I can be found tinkering with my PC or enjoying the beautiful outdoors.</p>
-            </div>
-    </div>
-    </div>
-
-
-    <!-- Skills -->
-
-    <div id="skills" class="center">
-            <h3 class="sectiontitle">Skills</h3>
-        <p class="languageproficiencytitle">Technical Proficiency</p>
-        <div class="languages">
-            <div class="col-xs-6 column-right-align">Java</div>
-            <div class="col-xs-6">
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100%" style="width: 40%;">
-                    <span class="sr-only">40% Complete</span>
-                  </div>
-                </div>
-            </div>
-            <div class="col-xs-6 column-right-align">C/C++</div>
-            <div class="col-xs-6">
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100%" style="width: 32%;">
-                    <span class="sr-only">32% Complete</span>
-                  </div>
-                </div>
-            </div>
-            <div class="col-xs-6 column-right-align">Python</div>
-            <div class="col-xs-6">
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100%" style="width: 15%;">
-                    <span class="sr-only">15% Complete</span>
-                  </div>
-                </div>
-            </div>
-            <div class="col-xs-6 column-right-align">Haskell</div>
-            <div class="col-xs-6">
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100%" style="width: 25%;">
-                    <span class="sr-only">25% Complete</span>
-                  </div>
-                </div>
-            </div>
-						<div class="col-xs-6 column-right-align">Prolog</div>
-            <div class="col-xs-6">
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100%" style="width: 20%;">
-                    <span class="sr-only">18% Complete</span>
-                  </div>
-                </div>
-            </div>
-            <div class="col-xs-6 column-right-align">Racket</div>
-            <div class="col-xs-6">
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100%" style="width: 28%;">
-                    <span class="sr-only">28% Complete</span>
-                  </div>
-                </div>
-            </div>
-            <div class="col-xs-6 column-right-align">HTML/CSS</div>
-            <div class="col-xs-6">
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100%" style="width: 35%;">
-                    <span class="sr-only">35% Complete</span>
-                  </div>
-                </div>
-            </div>
-            <div class="col-xs-6 column-right-align">JavaScript</div>
-            <div class="col-xs-6">
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100%" style="width: 10%;">
-                    <span class="sr-only">10% Complete</span>
-                  </div>
-                </div>
-            </div>
-            <div class="col-xs-6 column-right-align">Ruby</div>
-            <div class="col-xs-6">
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100%" style="width: 10%;">
-                    <span class="sr-only">10% Complete</span>
-                  </div>
-                </div>
-            </div>
-        </div>
-     </div>
-
-
-
-    <!-- Experience -->
-    <div id="experience" class="center experience">
-        <h2 class="sectiontitle">EXPERIENCE</h2>
-        <hr class="line-light">
-        <div class="future-internships">
-        <h3 style="text-align: center">Future Experience</h3>
-            <div class="col-md-6" style="text-align: right; margin-top: 15px;">
-                <img src="images/sap-logo.png">
-            </div>
-            <div class="col-md-6" style="text-align:left;">
-                <h4 class="center"style="text-align:left;">SAP</h4>
-                    <div class="positiontitle center"style="text-align:left;">
-                        <h5>Agile Developer Intern</h5>
-                    </div>
-            <h6 class="pre-space center"style="text-align:left;">September 2014 to April 2015</h6>
-            <p class="center"style="text-align:left;">I will be working at SAP for 8 months starting in May 2015.</p>
-            </div>
-        </div>
-           <div class="col-md-6">
-                <h3 style="text-align: center">Work Experience</h3>
-               <div class="row">
-                        <div class="col-md-3 img-inline">
-                            <img src="images/ubc-logo-white.png">
-                        </div>
-                        <div class="col-md-8" style="text-align: left;">
-                            <h4>UBC Department of Computer Science</h4>
-                            <div class="positiontitle">
-                                <h5>CPSC 210 Undergraduate Teaching Assistant</h5>
-                            </div>
-                            <h6 class="pre-space">September 2014 to April 2015</h6>
-                            <p><a href="https://sites.google.com/site/ubccpsc210/" target="_blank">CPSC 210</a> is UBC's introductory software design course which teaches students principles of object-oriented software design in Java, culminating in the completion of an Android app. As a Teaching Assistant, I am responsible for remaining up-to-date with class content and leading practical lab sections to help students.
-                            </p>
+                <a data-popup-ordinal="1" class="initialism lunchbuddies_open" href="#lunchbuddies">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="grid wow zoomIn my_popup_open my_popup">
+                            <figure class="effect-bubba">
+                                <img src="assets/images/lunch-buddies-lg.jpg" alt="Lunch Buddies"/>
+                                <figcaption>
+                                    <h2>Lunch Buddies</h2>
+                                    <p class="project-text">Personal Project - HTML/CSS, JavaScript, PHP, MySQL</p>
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
-               <br>
-           <div class="row">
-                <div class="col-md-3 img-inline">
-                    <img src="images/clc-logo-white.png">
-                </div>
-                <div class="col-md-8" style="text-align: left;">
-                    <h4>Canaccord Learning Commons at the Sauder School of Business</h4>
-                    <div class="positiontitle">
-                        <h5>Desk Assistant</h5>
+                </a>
+
+                <a data-popup-ordinal="1" class="initialism eloryze_open" href="#eloryze">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="grid wow zoomIn">
+                            <figure class="effect-bubba">
+                                <img src="assets/images/eloryze-lg.jpg" alt="img01"/>
+                                <figcaption>
+                                    <h2>ELORyze</h2>
+                                    <p class="project-text">Personal Project - HTML/CSS, JavaScript</p>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
-                    <h6 class="pre-space">September 2014 to April 2015</h6>
-                    <p>I act as the face of the CLC to students and help create a welcoming environment by providing computing and equipment assistance, answering information questions, and by helping students access the services they need.
-                    </p>
-                </div>
-            </div>
-           <br>
-            <div class="row">
-                <div class="col-md-3 img-inline">
-                    <img src="images/AMS-logo-white.png">
-                </div>
-                <div class="col-md-8" style="text-align: left;">
-                    <h4>UBC Alma Mater Society</h4>
-                    <div class="positiontitle">
-                        <h5>Economics Tutor</h5>
+                </a>
+
+                <a data-popup-ordinal="1" class="initialism parkcity_open" href="#parkcity">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="grid wow zoomIn">
+                            <figure class="effect-bubba">
+                                <img src="assets/images/park-city-lg.jpg" alt="img01"/>
+                                <figcaption>
+                                    <h2>Park City</h2>
+                                    <p class="project-text">Academic Project - Ruby on Rails</p>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
-                    <h6 class="pre-space">August 2013 to April 2014</h6>
-                    <p>I tutored first-year economics to students from various faculties. I tailored and adjusted my tutoring style to suit various students' learning styles, collecting a number of repeat students throughout the year.
-                    </p>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-3 img-inline">
-                    <img src="images/whole-foods-white.png">
-                </div>
-                <div class="col-md-8" style="text-align: left;">
-                    <h4>Whole Foods Market</h4>
-                    <div class="positiontitle">
-                        <h5>Seafood Team Member</h5>
+                </a>
+
+                <a data-popup-ordinal="1" class="initialism prescriptapp_open" href="#prescriptapp">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="grid wow zoomIn">
+                            <figure class="effect-bubba">
+                                <img src="assets/images/prescriptapp-lg.jpg" alt="img01"/>
+                                <figcaption>
+                                    <h2>PrescriptApp</h2>
+                                    <p class="project-text">Academic Project - Ruby on Rails, MySQL</p>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
-                    <h6 class="pre-space">June 2012 to June 2014</h6>
-                    <p>During my time working at Whole Foods Market, I leveraged my customer service skills to consistently exceed individual and team sales targets. I received FoodSafe training and accumulated a rather large repository of fish-related trivia and recipes in my head. </p>
+                </a>
+
+                <a data-popup-ordinal="1" class="initialism nextbus_open" href="#nextbus">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="grid wow zoomIn">
+                            <figure class="effect-bubba">
+                                <img src="assets/images/next-bus-lg.jpg" alt="img01"/>
+                                <figcaption>
+                                    <h2>Next Bus</h2>
+                                    <p class="project-text">Academic Project - Android Application</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <a href="http://www.github.com/asinn826" target="_blank">
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/github-lg.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2>My Github</h2>
+                                <p class="project-text">Why stop here? Check out my Github</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    </a>
                 </div>
-            </div>
+
             </div>
 
-    <div class="col-md-6">
-        <h3 style="text-align: center">Community Involvement</h3>
-            <div class="row">
-                <div class="col-md-3 img-inline">
-                    <img src="images/cus-logo-only-white.png">
-                </div>
-                <div class="col-md-8" style="text-align: left;">
-                    <h4>UBC Commerce Undergraduate Society</h4>
-                    <div class="positiontitle">
-                        <h5>Corporate Sponsorship Manager</h5>
-                    </div>
-                    <h6 class="pre-space">April 2013 to April 2014</h6>
-                    <p>I expanded the network of the CUS by 15% by leveraging relationship management and organizational skills to reach out to potential sponsors. I was also instrumental in promoting the CUS to over 60 business professionals around Vancouver as I organized the annual Commerce Community Breakfast.</p>
-                    <p> </p>
-                    <br>
-                    <div class="positiontitle">
-                        <h5>Vice-President, Recognition, Awards and Recognition Committee</h5>
-                    </div>
-                    <h6 class="pre-space">April 2013 to April 2014</h6>
-                    <p>I maintained regular communication with CUS club and conference leaders to ensure a high level of cooperation between the Awards & Recognition Committee and club executives. In doing so, I was able to fairly evaluate all CUS clubs and conference for the Top Club and Top Conference awards.<br><br></p>
-                </div>
-            </div>
-        <br>
-            <div class="row">
-                <div class="col-md-3 img-inline">
-                    <img src="images/cmp-logo-white.png">
-                </div>
-                <div class="col-md-8" style="text-align: left;">
-                    <h4>Commerce Mentorship Program</h4>
-                    <div class="positiontitle">
-                        <h5>Vice-President, Academic</h5>
-                    </div>
-                    <h6 class="pre-space">March 2013 to April 2014</h6>
-                    <p>In my role as the CMP's VP Academic, I was responsible for hiring tutors to host review sessions for select second-year Commerce courses, including introductory Accounting and Finance courses. I organized and helped promote these review sessions, which were held to great success - each was attended by over 100 students.
 
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+		</div><!-- .container -->
 
+	</section><!-- .projects -->
 
-
-    <!-- Achievements -->
-    <div id="achievements" class="center achievements">
-        <h2 class="sectiontitle">ACHIEVEMENTS</h2>
-        <hr class="line-dark">
-        <div class="achievements-title">
-            <p>Case Competitions are a lot of fun. Throughout my undergraduate career, I have been fortunate enough to work with many different types of people in various teams to tackle case competitions focused on a variety of subjects, from Accounting to  Sustainability. I truly enjoy the opportunity to work with different people in a high-pressure team environment where everyone is focused solely on one objective - winning.</p>
-        </div>
-         <div class="achievements-list-container">
-            <div class="achievements-list">
-                <ul>
-                    <li>Finalist, 2014 National Strategy Consulting Competition</li>
-                    <li>First Place, 2014 UBC Case Competition Club Premiere 32 Case Competition</li>
-                    <li>First Place, 2014 UBC Accounting Club CPA Case Competition</li>
-                    <li>First Place, 2013 UBC Accounting Club Case SuperSkills Case Competition</li>
-                    <li>First Place, 2013 Ernst & Young Sustainability Case Competition</li>
-                    <li>Second Place, 2012 International Business Club Case Competition</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+	<!-- Portfolio end -->
 
     <!-- Picture Banner -->
     <div id="box">
-        <div id="overlay">
+        <div id="overlay" class="wow slideInLeft" data-wow-delay=".1s">
             <span id="bannertext">onePicture.equals( 1000 * word );</span>
         </div>
     </div>
 
-    <!-- Education -->
-    <div id="education" class="center">
-        <h2 class="sectiontitle">EDUCATION</h2>
-        <hr class="line-light">
-        <div class="row education">
-            <div class="col-md-3 img-inline">
-                <img src="images/ubc-logo-white.png">
-            </div>
-            <div class="col-md-8" style="text-align: left;">
-                <h3 class="school-name">The University of British Columbia</h4>
-                <div class="degree-name">
-                   <h4>Bachelor of Commerce, Combined Major in Business and Computer Science</h5>
+
+	<!-- Experience start -->
+
+	<section id="experience" class="pfblock pfblock-gray">
+
+		<div class="container">
+
+            <div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">My Experience</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle negative-bottom-margin">
+							I have gained experience in a number of different capacities throughout my life. Here are some of the jobs and activites that I have been a part of.
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+            <!-- Work experience start -->
+            <h3 class="pfblock-header experience-subtitle top-margin">Work Experience</h3>
+            <div class="row">
+
+                <a data-popup-ordinal="1" class="initialism sap_dev_open" href="#sap_dev">
+                    <div class="col-sm-3">
+                        <div class="iconbox iconbox-active wow slideInLeft">
+                            <div class="iconbox-icon">
+                                <div class="sap-logo"></div>
+                            </div>
+                            <div class="iconbox-text">
+                                <h3>SAP</h3>
+                                <h4>Agile Developer Intern</h4>
+                                <h5 class="iconbox-title">May - December 2015</h5>
+                                <div class="iconbox-desc clear-upper-case">
+                                    I am currently interning at SAP as a developer.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a data-popup-ordinal="1" class="initialism cpscta_open" href="#cpscta">
+                    <div class="col-sm-3">
+                        <div class="iconbox iconbox-active wow slideInLeft">
+                            <div class="iconbox-icon">
+                                <div class="ubc-logo-exp"></div>
+                            </div>
+                            <div class="iconbox-text">
+                                <h3>UBC Department of Computer Science</h3>
+                                <h4>Teaching Assistant</h4>
+                                <h5 class="iconbox-title">September 2014 - April 2015</h5>
+                                <div class="iconbox-desc clear-upper-case">
+                                    I TAed CPSC 210,UBC's introductory software course.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a data-popup-ordinal="1" class="initialism clca_open" href="#clca">
+                    <div class="col-sm-3">
+                        <div class="iconbox iconbox-active wow slideInRight">
+                            <div class="iconbox-icon">
+                                <div class="clc-logo"></div>
+                            </div>
+                            <div class="iconbox-text">
+                                <h3>Canaccord Learning Commons</h3>
+                                <h4>Desk Assistant</h4>
+                                <h5 class="iconbox-title">September 2014 - April 2015</h5>
+                                <div class="iconbox-desc clear-upper-case">
+                                    I worked at the front desk at the library at Sauder.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a data-popup-ordinal="1" class="initialism econtutor_open" href="#econtutor">
+                    <div class="col-sm-3">
+                        <div class="iconbox iconbox-active wow slideInRight">
+                            <div class="iconbox-icon">
+                                <div class="ams-logo"></div>
+                            </div>
+                            <div class="iconbox-text">
+                                <h3>UBC Alma Mater Society</h3>
+                                <h4>Economics Tutor</h4>
+                                <h5 class="iconbox-title">September 2013 - April 2014</h5>
+                                <div class="iconbox-desc clear-upper-case">
+                                    I tutored students in introductory micro and macroeconomics.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div><!-- .row -->
+            <!-- Work experience end -->
+
+            <!-- Community involvement start -->
+            <h3 class="pfblock-header experience-subtitle top-margin">Community Involvement</h3>
+            <div class="row">
+
+                <a data-popup-ordinal="1" class="initialism cuscsm_open" href="#cuscsm">
+                    <div class="col-sm-3">
+                        <div class="iconbox iconbox-active wow slideInLeft">
+                            <div class="iconbox-icon">
+                                <div class="cus-logo"></div>
+                            </div>
+                            <div class="iconbox-text">
+                                <h3>UBC Commerce Undergraduate Society</h3>
+                                <h4>Corporate Sponsorship Manager</h4>
+                                <h5 class="iconbox-title">April 2013 - April 2014</h5>
+                                <div class="iconbox-desc clear-upper-case">
+                                    I helped secure corporate sponsorship for the CUS.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a data-popup-ordinal="1" class="initialism arcvpr_open" href="#arcvpr">
+                    <div class="col-sm-3">
+                        <div class="iconbox iconbox-active wow slideInLeft">
+                            <div class="iconbox-icon">
+                                <div class="cus-logo"></div>
+                            </div>
+                            <div class="iconbox-text">
+                                <h3>UBC Commerce Undergraduate Society</h3>
+                                <h4>VP Recognition, Awards &amp; Recognition Committee</h4>
+                                <h5 class="iconbox-title">April 2013 - April 2014</h5>
+                                <div class="iconbox-desc clear-upper-case">
+                                    I was in charge of evaluating clubs and conferences.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a data-popup-ordinal="1" class="initialism cmpvpa_open" href="#cmpvpa">
+                    <div class="col-sm-3">
+                        <div class="iconbox iconbox-active wow slideInRight">
+                            <div class="iconbox-icon">
+                                <div class="cmp-logo"></div>
+                            </div>
+                            <div class="iconbox-text">
+                                <h3>Commerce Mentorship Program</h3>
+                                <h4>VP Academic</h4>
+                                <h5 class="iconbox-title">March 2013 to April 2014</h5>
+                                <div class="iconbox-desc clear-upper-case">
+                                    I hired tutors and organized review sessions for business courses.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a data-popup-ordinal="1" class="initialism casecomp_open" href="#casecomp">
+                    <div class="col-sm-3">
+
+                        <div class="iconbox iconbox-active wow slideInRight">
+                            <div class="iconbox-icon">
+                                <span class="icon-badge"></span>
+                            </div>
+                            <div class="iconbox-text">
+                                <h3>Various Case Competitions</h3>
+                                <h4>Participant</h4>
+                                <h5 class="iconbox-title">Throughout my university career</h5>
+                                <div class="iconbox-desc clear-upper-case">
+                                    What is a case competition? Click for more info!
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+            </div><!-- .row -->
+            <!-- Community involvement end -->
+		</div><!-- .row -->
+	</section><!-- .experience -->
+
+	<!-- work experience end -->
+
+    <!-- Education start -->
+
+    <section id="education" class="pfblock">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 col-sm-offset-3">
+
+                    <div class="pfblock-header wow fadeInUp">
+                        <h2 class="pfblock-title">My Education</h2>
+                        <div class="pfblock-line"></div>
+                        <div class="pfblock-subtitle">
+
+                            <div class="ubc-logo"></div>
+                            <div class="row">
+                                <h2 class="experience-subtitle">The University of British Columbia</h2>
+                                <h3 class="experience-subtitle-2">Bachelor of Commerce, Combined Major in Business and Computer Science</h3>
+                                <h4>September 2012 to April 2017 (expected)</h4>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
-                <h5 class="degree-time">September 2012 to April 2017 (expected)</h6>
+
+
             </div>
-        </div>
-        <div class="course-container">
-            <div class="courses-list"><em>Select Completed Coursework:</em>
-                <ul>
-                    <li>COMM 291 - Applications of Statistics in Business</li>
-                    <li>COMM 298 - Introduction to Finance</li>
-                    <li>COMM 335 - Information Systems Analysis and Design</li>
-                    <li>COMM 391 - Management Information Systems</li>
-                    <li>CPSC 110 - Introduction to Systematic Program Design</li>
-                    <li>CPSC 210 - Software Construction</li>
-					<li>CPSC 221 - Algorithms & Data Structures</li>
-					<li>CPSC 213 - Computer Systems</li>
+        </div><!-- .container -->
+    </section>
 
-                </ul>
-            </div>
-        </div>
-    </div>
+    <!-- education end -->
 
 
-    <!-- Contact -->
-    <div id="contactinfo" class="center contact">
-        <h2 class="sectiontitle">CONTACT ME</h2>
-        <hr class="line-light">
+	<!-- Contact start -->
 
-        <p>I'm more than just a webpage. Feel free to get in touch with me, I'd love to connect with you!</p>
+	<section id="contact" class="pfblock pfblock-gray">
+		<div class="container contact-me">
+			<div class="row">
 
-        <br>
-        <div class="contact-bar">
+				<div class="col-sm-6 col-sm-offset-3">
 
-        <p class="contact-p">
-            <!-- Phone icon link -->
-            <script language="JavaScript">
-                var acode = "604";
-                var part1 = "928";
-                var part2 = "8616";
-                document.write("<a class='email-icon' href=" + "te" + "l:" + acode + part1 + part2 + ">" +
-                               '<img style="height:auto; width:auto; max-width:24px; max-height:24px;" src="images/icn-phone2-white.png" alt="Email" />' + "</a>");
-            </script>
-            <!-- Phone text link -->
-            <script language="JavaScript">
-                var acode = "604";
-                var part1 = "928";
-                var part2 = "8616";
-                document.write("<a href='" + "te" + "l:" + acode + part1 + part2 + "'>" + acode + "." + part1 + "." + part2 + "</a>");
-            </script>
-        </p>
+					<div class="pfblock-header">
+						<h2 class="pfblock-title">Contact me</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							I'm more than just a webpage. Feel free to get in touch with me, I would love to connect with you!
+						</div>
+					</div>
 
-        <p class="contact-p">
-            <!-- Email icon link -->
-            <script language="JavaScript">
-                var username = "alfredsin";
-                var hostname = "outlook.com";
-                var linktext = username + "@" + hostname ;
-                document.write("<a class='email-icon' href=" + "mail" + "to:" + username + "@" + hostname + ">" +
-                               '<img style="height:auto; width:auto; max-width:24px; max-height:24px;" src="images/icn-email-white.png" alt="Email" />' + "</a>");
-            </script>
-            <!-- Email text link -->
-            <script language="JavaScript">
-                var username = "alfredsin";
-                var hostname = "outlook.com";
-                var linktext = username + "@" + hostname ;
-                document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
-            </script>
-        </p>
+				</div>
 
-            <!-- Social Media -->
-        <div class="socialinfo contact-p">
-            <ul class="social-media-bar">
-                <a class="fb-icon" href=https://www.facebook.com/alfred.sin target="_blank">
-                        <img style="height:auto; width:auto; max-width:48px; max-height:48;" src="images/icn-fb-white.png" alt="Facebook" />
-                    </a>
+			</div><!-- .row -->
 
+			<div class="row">
 
+				<div class="col-sm-6 col-sm-offset-3 text-center">
 
-                    <a class="li-icon" href="http://www.linkedin.com/in/alfredsin" target="_blank">
-                        <img style="height:auto; width:auto; max-width:48px; max-height:48;" src="images/icn-linkedin-white.png" alt="LinkedIn" />
-                    </a>
+                <div class="wow fadeInUp email">
+                    <a href="mailto:alfredsin@hotmail.ca"><i class="fa fa-envelope"></i> alfred_sin@outlook.com</a></li>
+                </div>
 
+                    <ul class="social-links">
+                        <li><a href="https://ca.linkedin.com/in/alfredsin" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/asinn826/" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-github-alt"></i></a></li>
+                        <li><a href="https://www.facebook.com/alfred.sin" class="wow fadeInUp" data-wow-delay=".5s"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
 
+				</div>
 
-                    <a class="github-icon" href="https://github.com/asinn826" target="_blank">
-                        <img style="height:auto; width:auto; max-width:48px; max-height:48;" src="images/icn-github-white.png" alt="Email" />
-                    </a>
-            </ul>
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
 
-        </div>
-        </div>
-    </div> <!-- End contact info -->
+	<!-- Contact end -->
 
-    </div> <!-- End content-main -->
+	<!-- Footer start -->
 
-    <!-- Footer -->
-    <div id="footer" class="footer">
-        <hr class="line-light">
-        <span>Copyright &copy; 2014 Alfred Sin. All rights reserved.</span>
-        <br>
-        <span><a href="http://typicons.com/" target="_blank">Typicons</a> are used under the <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">Creative Commons Attribution-ShareAlike 3.0 Unported </a> License.<br>
-        </span>
-        <hr class="line-light">
-    </div>
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
 
+				<div class="col-sm-12">
 
-     <!-- JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    // <script type="text/javascript" src="js/smoothscroll.js"></script>
-    <script type="text/javascript" src="js/skrollr.js"></script>
-    <script type="text/javascript" src="js/jquery-blink.js"></script>
-    <script type="text/javascript" language="javascript">
-        $(document).ready(function()
-        {
-                $('.blink').blink({delay:600}); // 600ms blink interval.
-        });
+                    <p class="copyright">
+                        &copy; 2015 Alfred Sin | An old version of this website can be found <a class="footer-link-text" href="http://www.alfredsin.com/old-website" target="_blank">here.</a>
+					</p>
 
-    </script>
-    </div>
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+
+	<!-- Scroll to top -->
+
+	<div class="scroll-up">
+		<a href="#home" title="Beam me up, Scotty!"><i class="fa fa-angle-up"></i></a>
+	</div>
+
+    <!-- Scroll to top end-->
+
+	<!-- Javascript files -->
+    <script src="assets/js/modernizr.custom.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+	<script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.cbpQTRotator.js"></script>
+	<script src="assets/js/custom.js"></script>
+    <script src="assets/js/jquery-blink.js"></script>
+    <script src="assets/js/jquery.popupoverlay.js"></script>
+    <script src="assets/js/custom-alfred.js"></script>
 </body>
 </html>
